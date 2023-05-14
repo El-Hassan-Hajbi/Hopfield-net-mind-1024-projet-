@@ -50,8 +50,6 @@ On essayera de revoir l'algo de convergence et peut etre utiliser backward propa
 Après avoir vu que Hebbian learning ne donne pas les résultats attendus pour la classification MNIST. J'ai trouvé un meilleur algorithme mais trés couteux en calcul.
 Les résultats sont maintenant satisfaisant :
 - accuracy unnoise : entre 0.99 et 1
-- accuracy classify : entre 0.6 et 0.75
-
-
+- accuracy classify : entre 0.6 et 0.75.
 ![Alt text](screen app.png)
 
