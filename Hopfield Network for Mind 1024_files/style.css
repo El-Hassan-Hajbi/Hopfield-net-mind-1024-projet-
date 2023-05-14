@@ -1,0 +1,70 @@
+.drawing {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.centered-text {
+      text-align: center;
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+body{
+    background-color: #80BDE3;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #e0e0e0;
+  position: relative;
+  visibility: hidden;
+}
+
+#progress-bar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: #2196f3;
+  animation: progress 1s infinite;
+}
+
+@keyframes progress {
+  0% {
+    left: -50%;
+    width: 50%;
+  }
+  100% {
+    left: 100%;
+    width: 50%;
+  }
+}
+
