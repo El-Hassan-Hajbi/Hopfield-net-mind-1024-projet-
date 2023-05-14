@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% csrf_token %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/img.ico' %}">
+    <script src="{% static 'js/canva.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <title>Hopfield Network for Mind 1024</title>
+</head>
+<body>
+
+    <div id="container">
+        <br id="br">Simulation du MIND 1024
+
+        <div id="input-drawing", class="drawing"></div>
+        <div id="classification-drawing"></div>
+
+        <div class="centered-text">
+            <h1 id="output">Here is the output of the classification!</h1>
+        </div>
+
+        <div id="controls">
+            <button id="run-classification">Classification</button>
+            <button id="refreshtrain">Refresh (train data)</button>
+            <button id="refreshtest">Refresh (test data)</button>
+            <button id="load">Load Data</button>
+            <button id="noise">Randomize</button>
+            <button id="unnoise">Retrieve</button>
+        </div>
+
+        <br>Figure à reconnaître par le réseau de neurones (bouton Classification)
+
+        <div id="progress-bar"></div>
+
+    </div>
+
+    <footer>
+      <p>by El Hassan Hajbi</p>
+      <p>GitHub: <a href="https://github.com/El-Hassan-Hajbi/">https://github.com/El-Hassan-Hajbi/</a></p>
+    </footer>
+
+</body>
+</html>
