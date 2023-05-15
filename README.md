@@ -53,14 +53,14 @@ Les résultats sont maintenant satisfaisant :
 - accuracy classify : entre 0.6 et 0.75.
 ![Alt text](screen app.png)
 ## How to download :
-git clone url name_dir 
-cd name_dir 
-pip install django
-django-admin src/manage.py runserver
+`git clone url name_dir` 
+`cd name_dir` 
+`pip install django`
+`django-admin src/manage.py runserver`
 
 you may need to :
-pip install numpy
-pip install matplotlib
-pip install torchvision
+`pip install numpy`
+`pip install matplotlib`
+`pip install torchvision`
 
 
